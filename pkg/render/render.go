@@ -60,6 +60,7 @@ func CreateTemplateCache() (map[string]*template.Template, error) {
 
 	pages, err := filepath.Glob("./templates/*.page.tmpl")
 	if err != nil {
+		fmt.Println("Error in get the files")
 		return mycache, err
 	}
 
