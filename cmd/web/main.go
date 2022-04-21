@@ -1,12 +1,14 @@
 package main
 
 import (
+	"encoding/gob"
 	"fmt"
 	"log"
 	"net/http"
 	"time"
 
 	"github.com/FilipeFit/bookings/internal/handlers"
+	"github.com/FilipeFit/bookings/internal/models"
 	"github.com/FilipeFit/bookings/internal/render"
 
 	"github.com/FilipeFit/bookings/internal/config"
@@ -19,6 +21,9 @@ var app config.AppConfig
 var session *scs.SessionManager
 
 func main() {
+	// What am i going to put in the session
+	gob.Register(models.Reservation{})
+
 	app.InProduction = false
 
 	session = scs.New()
