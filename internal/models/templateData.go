@@ -1,5 +1,7 @@
 package models
 
+import "github.com/FilipeFit/bookings/internal/forms"
+
 //TemplateDate holds data sent from handlers to templates
 type TemplateData struct {
 	StringMap map[string]string
@@ -10,4 +12,5 @@ type TemplateData struct {
 	Flash     string
 	Warning   string
 	Erro      string
+	Form      *forms.Form
 }
