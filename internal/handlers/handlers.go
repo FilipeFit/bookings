@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/FilipeFit/bookings/pkg/config"
-	"github.com/FilipeFit/bookings/pkg/models"
-	"github.com/FilipeFit/bookings/pkg/render"
+	"github.com/FilipeFit/bookings/internal/config"
+	"github.com/FilipeFit/bookings/internal/models"
+	"github.com/FilipeFit/bookings/internal/render"
 )
 
 // Repo is the repository used by the handlers
@@ -20,7 +20,7 @@ type Repository struct {
 }
 
 // NewRepo creates a new repository
-func NewRepo(a *config.AppConfig) *Repository {
+func NewRepo(a *config.AppConfig) *Repository { 
 	return &Repository{
 		App: a,
 	}

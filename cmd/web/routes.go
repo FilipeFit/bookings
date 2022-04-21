@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/FilipeFit/bookings/pkg/config"
-	"github.com/FilipeFit/bookings/pkg/handlers"
+	"github.com/FilipeFit/bookings/internal/config"
+	"github.com/FilipeFit/bookings/internal/handlers"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"

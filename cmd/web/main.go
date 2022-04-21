@@ -6,10 +6,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/FilipeFit/bookings/pkg/handlers"
-	"github.com/FilipeFit/bookings/pkg/render"
+	"github.com/FilipeFit/bookings/internal/handlers"
+	"github.com/FilipeFit/bookings/internal/render"
 
-	"github.com/FilipeFit/bookings/pkg/config"
+	"github.com/FilipeFit/bookings/internal/config"
 	"github.com/alexedwards/scs/v2"
 )
 
